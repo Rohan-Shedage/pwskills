@@ -1,0 +1,27 @@
+1 : An array is a container object that holds a fixed number of values of a single type.
+
+2 : datatype[] varName = new datatype[];
+    datatype[] varName = new datatype[sizeofArray];
+    datatype[] varName = { comma(,) seperated values};
+
+3 : No
+
+4 : datatype[] varName = new datatype[];
+    datatype[] varName = { comma(,) seperated values};
+
+5 : 0
+
+6 : A 1D array is a simple data structure that stores a collection of similar type data in a contiguous block of memory.
+    Ex. : int[] arr = {1, 2, 3, 4};
+
+7 : public class TwoDimensionalArray{
+        public static void main(String[] args){
+            int[][] arr = {{1,2},{3,4},{5,6}};
+            for(int[] i: arr){
+                for(int j: i){
+                    System.out.print(j +" ");
+                }
+                System.out.println();
+            }
+        }
+    }

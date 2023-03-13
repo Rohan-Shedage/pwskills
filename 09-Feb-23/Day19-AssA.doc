@@ -1,0 +1,86 @@
+﻿1 : Encapsulation in Java refers to integrating data (variables) and code (methods) into a single unit.
+    In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.
+
+2 : * In Java, encapsulation helps us to keep related fields and methods together, which makes our code cleaner and easy to read.
+    * It helps to control the values of our data fields.
+    * The getter and setter methods provide read-only or write-only access to our class fields. For example,
+    * It helps to decouple components of a system. For example, we can encapsulate code into multiple bundles.
+    * We can also achieve data hiding using encapsulation.
+
+3 : Getter returns the value (accessors), it returns the value of data type int, String, double, float, etc. For the program’s convenience, getter starts with the word “get” followed by the variable name.
+    Setter sets or updates the value (mutators). It sets the value for any variable used in a class’s programs. and starts with the word “set” followed by the variable name.
+    Ex. :
+        class GetSet {
+            private String name;
+
+            // Method 1 - Getter
+            public String getName() {
+                return name;
+            }
+
+            // Method 2 - Setter
+            public void setName(String N)
+            {
+                this.name = N;
+            }
+        }
+
+        class GFG {
+            public static void main(String[] args)
+            {
+                GetSet obj = new GetSet();
+
+                obj.setName("Rohan Shedage");
+                System.out.println(obj.getName());
+            }
+        }
+
+4 : The this keyword can be used to refer current class instance variable. If there is ambiguity between the instance variables and parameters, this keyword resolves the problem of ambiguity.
+    Ex. :
+        class Student{
+            int rollno;
+            String name;
+            float fee;
+            Student(int rollno,String name,float fee){
+                this.rollno = rollno;
+                this.name = name;
+                this.fee = fee;
+            }
+            void display(){
+                System.out.println(rollno+" "+name+" "+fee);
+            }
+        }
+        class TestThis{
+            public static void main(String args[]){
+                Student s1=new Student(111,"ankit",5000f);
+                Student s2=new Student(112,"sumit",6000f);
+                s1.display();
+                s2.display();
+            }
+        }
+
+
+5 : * Hiding data: Users will have no idea how classes are being implemented or stored. All that users will know is that values are being passed and initialized.
+    * More flexibility: Enables you to set variables as red or write-only. Examples include: setName(), setAge() or to set variables as write-only then you only need to omit the get methods like getName(), getAge() etc.
+    * Easy to reuse: With encapsulation, it's easy to change and adapt to new requirements
+
+6 : Encapsulation in Java can be achieved by:
+    * Declaring the variables of a class as private.
+    * Providing public setter and getter methods to modify and view the variables values.
+    Ex. :
+    public class Student {
+        private String name;
+        public String getName() {
+            return name;
+         }
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
+    class Test{
+        public static void main(String[] args) {
+            Student s=new Student();
+            s.setName("Harry Potter");
+            System.out.println(s.getName());
+        }
+    }

@@ -1,0 +1,17 @@
+1: git --version command in a terminal
+
+2 : git init command
+
+3 : Open the command line.
+    Set your username: git config --global user.name "Rohan shedage"
+    Set your email address: git config --global user.email "rohanshedage2@gmail.com"
+
+4: git add 'command and passing necessary options'
+
+5 : git rm <filename>
+
+6 : git commit -m 'message'
+
+7 : git push -u remote-name branch-name
+
+8 : git pull (or git fetch + git merge ) is how you update that local copy with new commits from the remote repository. git clone is used for just downloading exactly what is currently working on the remote server repository and saving it in your machine's folder where that project is placed.

@@ -1,0 +1,18 @@
+1 : Strings are a sequence of characters.
+
+2 : * Immutable strings.
+    * Mutable strings.
+
+3 : * String name = "Rohan";
+    * String name = new String("Rohan");
+    * StringBuilder str = new StringBuilder("PWSkills");
+    * StringBuffer str = new StringBuffer("PWSkills");
+
+4 : A string constant pool is a separate place in the heap memory where the values of all the strings which are defined in the program are stored.
+
+5 : * The mutable objects are objects whose value can be changed after initialization.
+    Ex. : StringBuilder, StringBuffer, etc.
+    * The immutable objects are objects whose value can not be changed after initialization.
+    Ex. : String class, etc.
+
+6 : Heap memory

@@ -1,0 +1,19 @@
+1 : A programming language is a system of notation for writing computer programs.
+
+2 : Programming languages use classes and functions that control commands. The reason that programming is so important is that it directs a computer to complete these commands over and over again, so people do not have to do the task repeatedly. Instead, the software can do it automatically and accurately.
+
+3 : Simple.
+    Object-Oriented.
+    Platform Independent.
+    Portable.
+    Robust.
+    Secure.
+    Interpreted.
+    Multi-Threaded.
+
+4 : An object stores its state in fields (variables in some programming languages) and exposes its behavior through methods (functions in some programming languages).
+
+5 : A class is a blueprint from which individual objects are created.
+
+6 : It is a default signature that is predefined in the JVM. It is called by JVM to execute a program line by line and end the execution after completion of this method. We can also overload the main() method. String args[]: The main() method also accepts some data from the user.
+

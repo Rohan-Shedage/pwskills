@@ -1,0 +1,214 @@
+1 : public class RemoveDuplicatesFromString {
+        public static void main(String[] args) {
+            String str = "Hello World";
+            char[] arr= str.toCharArray();
+            int length = arr.length;
+            for (int i = 0; i < length; i++) {
+                for (int j = i+1; j < length; j++) {
+                    if(arr[i] == arr[j])
+                    {
+                        arr[j] = ' ';
+                    }
+
+                }
+                if(arr[i] != ' ')
+                {
+                    System.out.print(arr[i]);
+                }
+            }
+        }
+    }
+
+2 : public class PrintDuplicatesInString {
+        public static void main(String[] args) {
+            String str = "Hello";
+            char[] arr= str.toCharArray();
+            int length = arr.length;
+            String result = "";
+            for (int i = 0; i < length; i++) {
+                for (int j = i+1; j < length; j++) {
+                    if(arr[i] == arr[j])
+                    {
+                        System.out.println(arr[i]);
+                        break;
+                    }
+
+                }
+            }
+        }
+    }
+
+3 : public class CheckPalindrome {
+        public static void isPalindrome(String str){
+            String reverse = "";
+            for (int i = str.length()-1; i >= 0 ; i--) {
+                reverse += str.charAt(i);
+            }
+            if(str.equals(reverse))
+                System.out.println("It is palindrome");
+            else
+                System.out.println("It is not palindrome");
+        }
+        public static void main(String[] args) {
+            String str = "2552";
+            isPalindrome(str);
+        }
+    }
+
+4 : public class CountVowelsConsonantsAndSymbols {
+        public static void main(String[] args) {
+            String str = "Hello World!";
+            String consonants = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz";
+            String vowels = "AEIOUaeiou";
+            String notSpecialCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            int countConsonants = 0, countVowels = 0, countSpecialCharacters = 0;
+            for (int i = 0; i < str.length(); i++) {
+                for (int j = 0; j < consonants.length(); j++) {
+                    if(str.charAt(i)==consonants.charAt(j))
+                        countConsonants++;
+                }
+                for (int j = 0; j < vowels.length(); j++) {
+                    if(str.charAt(i)==vowels.charAt(j))
+                        countVowels++;
+                }
+                if (!Character.isDigit(str.charAt(i))
+                        && !Character.isLetter(str.charAt(i))
+                        && !Character.isWhitespace(str.charAt(i)))
+                    countSpecialCharacters++;
+            }
+            System.out.println("Consonants : "+countConsonants);
+            System.out.println("Vowels : "+countVowels);
+            System.out.println("Special characters :"+countSpecialCharacters);
+        }
+    }
+
+5 : import java.util.Arrays;
+
+    public class checkAnagram {
+        public static void anagram ( String str1, String str2 ) {
+            char[] strOne = str1.toCharArray ();
+            char[] strTwo = str2.toCharArray ();
+            int[] arr = new int[ strOne.length ];
+            Arrays.sort ( strOne );
+            Arrays.sort ( strTwo );
+            boolean flag = false;
+            for ( int i = 0; i < strOne.length; i++ ) {
+                if ( strOne[ i ] == strTwo[ i ] )
+                    arr[ i ]++;
+                if ( arr[ i ] == 0 )
+                    flag = true;
+            }
+            if ( flag )
+                System.out.println ( "These are not Anagrams" );
+            else
+                System.out.println ( "These are Anagrams" );
+        }
+
+        public static void main ( String[] args ) {
+            String strOne = "abcd";
+            String strTwo = "bcda";
+            anagram ( strOne, strTwo );
+        }
+    }
+
+6 : public class checkPangram {
+        public static void pangram(String str)
+        {
+
+            str = str.toLowerCase();
+            boolean flag = false;
+            int[] arr = new int[26];
+
+            for (int i = 0; i < str.length(); i++)
+                if (Character.isLetter(str.charAt(i)))
+                    arr[str.charAt(i) - 'a']++;
+
+            for (int i = 0; i < 26; i++)
+                if(0 == arr[i] || arr[i] > 1) {
+                    flag = true;
+                    break;
+                }
+
+            if (flag)
+                System.out.println("These are not Pangrams");
+            else
+                System.out.println("These are Pangrams");
+
+        }
+
+        public static void main(String[] args) {
+            String str = "Abcdefghijklmnopqrstuvwxyz";
+            pangram(str);
+        }
+    }
+
+
+7 : public class CheckUniqueCharactersInString {
+        public static void isUnique(String str)
+        {
+            str = str.toLowerCase();
+            boolean flag = false;
+            int[] arr = new int[str.length()];
+
+            for (int i = 0; i < str.length(); i++)
+                if (Character.isLetter(str.charAt(i)))
+                    arr[str.charAt(i) - 'a']++;
+
+            for (int i = 0; i < str.length(); i++)
+                if(0 == arr[i] || arr[i] > 1) {
+                    flag = true;
+                    break;
+                }
+
+            if (flag)
+                System.out.println("No");
+            else
+                System.out.println("Yes");
+        }
+
+        public static void main(String[] args) {
+            isUnique("Abcdee");
+            isUnique("Abcde");
+        }
+    }
+
+
+8 : public class MaximumOccuringCharacterInString {
+        public static void maxOccuranceCharIn(String str)
+        {
+            str = str.toLowerCase();
+            int[] arr = new int[str.length()];
+            boolean flag = false;
+            for (int i = 0; i < str.length(); i++)
+                if (Character.isLetter(str.charAt(i)))
+                    arr[str.charAt(i) - 'a']++;
+
+            for (int i = 0; i < str.length(); i++)
+                if(0 == arr[i] || arr[i] > 1) {
+                    flag = true;
+                    break;
+                }
+
+            if (flag) {
+                int max = 0;
+                int ch = 0;
+                for(int i = 0; i < arr.length; i++) {
+                    if(arr[i] > max) {
+                        max = arr[i];
+                        ch = (char)i + 'a';
+                    }
+                }
+                System.out.println((char)ch + ":" + max);
+            }
+            else if(str == "")
+                System.out.println("String is null");
+            else
+                System.out.println("All are same");
+        }
+
+        public static void main(String[] args) {
+            maxOccuranceCharIn("abbbb");
+        }
+    }
+
+

@@ -1,0 +1,15 @@
+1 : using new keyword Ex : <classname> <objectname> = new <classname>();
+
+2 : The new keyword in Java is used to instantiate a class by allocating desired memory for an associated new object.
+
+3 : Instance variable
+    Static variable
+    Local variable
+
+4 : Instance Variable: These variables are declared within a class but outside a method, constructor, or block and always get a default value.
+    Local Variable: These variables are declared within a method but do not get any default value.
+
+5 : Stack is a memory place where the methods and the local variables are stored.
+    Heap is a memory place where the objects and its instance variable are stored.
+
+6 : If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.

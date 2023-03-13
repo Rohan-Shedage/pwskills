@@ -1,0 +1,22 @@
+﻿1 : Boolean false
+    int 0
+    double 0.0
+    String null
+
+2 : No
+
+3 : Heap memory/area
+
+4 : * The size of the array cannot be increased or decreased once it is declared—arrays have a fixed size.
+    * Java cannot store heterogeneous data. It can only store a single type of primitive.
+
+5 : An array in Java without any name is known as an anonymous array.
+    Ex. : new int[] { 1, 2, 3, 4};
+
+6 : * for loop
+    * for each loop or enhanced for loop
+
+7 : * length variable describes the size of an array
+    Ex. : int length = arr.length;
+    * length() method tells you how many characters a text String contains.
+    Ex. : int length = str.length();

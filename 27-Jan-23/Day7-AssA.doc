@@ -1,0 +1,24 @@
+1 : dynamically-typed languages perform type checking at runtime, while statically typed languages perform type checking at compile time.
+
+2 : Variables are containers for storing data values.
+
+3 : type variableName = value; Where type is one of Java's types (such as int or String ), and variableName is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.
+
+4 : Primitive data types - includes byte , short , int , long , float , double , boolean and char.
+
+5 : All Java variables must be identified with unique names. These unique names are called identifiers. Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+6 : Arithmetic Operators.
+    Assignment Operators.
+    Logical Operators.
+    Relational Operators.
+    Unary Operators.
+    Bitwise Operators.
+    Ternary Operators.
+    Shift Operators.
+
+7 : If you use the ++ operator as a prefix like:
+        ++var, the value of var is incremented by 1; then it returns the value.
+    If you use the ++ operator as a postfix like:
+        var++, the original value of var is returned first; then var is incremented by 1.
+    The -- operator works in a similar way to the ++ operator except -- decreases the value by 1.

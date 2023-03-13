@@ -1,0 +1,28 @@
+1 : Conditional AND
+    Conditional OR
+    Ternary Operator
+
+2 : unary and binary.
+
+3 : The switch case in java executes one statement from multiple ones. Thus, it is like an if-else-if ladder statement. It works with a lot of data types. The switch statement is used to test the equality of a variable against several values specified in the test cases.
+
+4 :  Parentheses, Exponents, Multiplication/Division, Addition/Subtraction.
+
+5 : Conditional statements work by using Boolean expressions in the form of logical if/else and then statements evaluating if something is true or false. If the outlined condition fulfils the situation, the action can happen.
+
+6 :  if(Boolean_expression 1) {
+        // Executes when the Boolean expression 1 is true
+     }
+     else {
+     // Executes when the none of the above condition is true.
+     }
+
+7 : while
+    do-while
+    for
+
+8 : in the while loop the condition is checked prior to executing any statements whereas in the case of do while loop, statements are run at least once, and then the condition is verified.
+
+9 : for(int i = 1; i<=10; i++) {
+        System.out.println(i);
+    }

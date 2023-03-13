@@ -1,0 +1,206 @@
+1 : public class printAlphabet {
+        public static void main(String[] args) {
+            for(int i = 65; i<91; i++){
+                System.out.print((char)i + " ");
+            }
+        }
+    }
+
+2 : public class patternTriangle {
+        public static void main(String[] args) {
+            int n = 5;
+            for(int i=0; i<n; i+=1){
+                for(int j=0; j<=i; j++){
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+        }
+    }
+
+3: public class pattenWindow {
+       public static void main(String[] args) {
+           int n = 15;
+           for(int i=0; i<n; i++){
+               for(int j=0; j<n; j++){
+                   if(j==0 || i==0 || j==n-1 || i==n-1 || i+j <= (n-1)/2 || j-i >= (n-1)/2){
+                       System.out.print("*");
+                   }
+                   else{
+                       System.out.print(" ");
+                   }
+               }
+
+               System.out.println();
+           }
+       }
+   }
+
+4 : public class patternPWSkills {
+        public static void main(String[] args) {
+            int n = 10;
+            for(int i=0; i<n-1; i++){
+                //P
+                for (int j = 0; j < n/2; j++) {
+                    if(i == 0 || j==0 || (i == (n-1)/2 && j == j) || (j == (n-1)/2) && i < j){
+                        System.out.print("* ");
+                    }
+                    else {
+                        System.out.print("  ");
+                    }
+                }
+
+                //W
+                for (int j = 0; j < n; j++) {
+                    if(j==0){
+                        System.out.print("*");
+                    }
+                }
+                for (int j = n-1; j >= (n-1)/2; j--) {
+                    if(i == j){
+                        System.out.print("*");
+                    }
+                    else{
+                        System.out.print(" ");
+                    }
+                }
+                for (int j = (n-1)/2; j < n; j++) {
+                    if(i == j){
+                        System.out.print("*");
+                    }
+                    else{
+                        System.out.print(" ");
+                    }
+                }
+                for (int j = n; j >= 0; j--) {
+                    if(j == n){
+                        System.out.print("*  ");
+                    }
+                    else{
+                        System.out.print("");
+                    }
+                }
+
+                //S
+                for (int j = 0; j < n/2; j++) {
+                    if(i == 0 || i == (n-1)/2 || i == n-2 || (j == 0 && i <= (n-1)/2) || (j == (n-1)/2 && i >= (n-1)/2)){
+                        System.out.print("* ");
+                    }
+                    else{
+                        System.out.print("  ");
+                    }
+                }
+
+                //K
+                for(int j=0; j<n/2; j++){
+                    if(j==0 || i==n-1 || i+j == (n-1)/2 || i-j == (n-1)/2){
+                        System.out.print("* ");
+                    }
+                    else{
+                        System.out.print("  ");
+                    }
+                }
+
+                //I
+                for(int j=0; j<n/2; j++){
+                    if(i ==0 || i == n-2 || j == (n-1)/4){
+                        System.out.print("* ");
+                    }
+                    else{
+                        System.out.print("  ");
+                    }
+                }
+
+                //L
+                for (int j = 0; j < n/2; j++) {
+                    if(j == 0 || i == n-2 ){
+                        System.out.print("* ");
+                    }
+                    else{
+                        System.out.print("  ");
+                    }
+                }
+
+                //L
+                for (int j = 0; j < n/2; j++) {
+                    if(j == 0 || i == n-2 ){
+                        System.out.print("* ");
+                    }
+                    else{
+                        System.out.print("  ");
+                    }
+                }
+
+                //S
+                for (int j = 0; j < n/2; j++) {
+                    if(i == 0 || i == (n-1)/2 || i == n-2 || (j == 0 && i <= (n-1)/2) || (j == (n-1)/2 && i >= (n-1)/2)){
+                        System.out.print("* ");
+                    }
+                    else{
+                        System.out.print("  ");
+                    }
+                }
+
+                System.out.println();
+            }
+        }
+    }
+
+5  : public class patternNiyaj {
+         public static void main(String[] args) {
+             int n = 10;
+             for (int i = 0; i < n; i++) {
+                 //N
+                 for (int j = 0; j < n; j++) {
+                     if(j == 0 || j == n-1 || i == j) {
+                         System.out.print("* ");
+                     }
+                     else{
+                         System.out.print("  ");
+                     }
+                 }
+
+                 //I
+                 for(int j = 0; j < n-1; j++){
+                     if(i ==0 || i == n-1 || j == (n-1)/2){
+                         System.out.print("* ");
+                     }
+                     else{
+                         System.out.print("  ");
+                     }
+                 }
+
+                 //W
+                 for (int j = 0; j < n; j++) {
+                     if(j == (n-1)/2 && i >= n/2 || i == j && i < n/2 || i+j == n-2 && i < n/2){
+                         System.out.print("* ");
+                     }
+                     else{
+                         System.out.print("  ");
+                     }
+                 }
+
+                 // A
+                 for (int j = 0; j < n-2; j++) {
+                     if(i == 0 || j==0 || j == n-3 || i == (n-1)/2 ){
+                         System.out.print("* ");
+                     }
+                     else {
+                         System.out.print("  ");
+                     }
+                 }
+
+                 //J
+                 for (int j = 0; j < n-1; j++) {
+                     if(i == 0 || i == n-1 && j < n/2 || j == (n-1)/2 || j == 0 && i > n/2){
+                         System.out.print("* ");
+                     }
+                     else{
+                         System.out.print("  ");
+                     }
+                 }
+                 System.out.println();
+             }
+         }
+     }
+

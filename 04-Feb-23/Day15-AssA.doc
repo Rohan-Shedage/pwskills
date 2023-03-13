@@ -1,0 +1,73 @@
+1 : import java.util.Scanner;
+
+    public class InputString {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter a String : ");
+            String str = sc.nextLine();
+            System.out.println("You have entered : "+str);
+        }
+    }
+
+2 : public class ConcatString {
+       public static void main(String[] args) {
+           String strOne = "Rohan";
+           String strTwo = "Shedage";
+           //By + opetator
+           String resultOne = strOne + " " + strTwo;
+           System.out.println("By + opetator : "+resultOne);
+           //By concat() method
+           String resultTwo = strOne.concat(" ").concat(strTwo);
+           System.out.println("By concat() method : "+resultTwo);
+       }
+   }
+
+3 : public class LengthString {
+        public static void main(String[] args) {
+            String name = "Rohan Shedage";
+            System.out.println(name.length());
+        }
+    }
+
+4 : public class CompareString {
+        public static void main(String[] args) {
+            String strOne = "Hello";
+            String strTwo = "Hello";
+            boolean resultOne = strOne == strTwo ;
+            System.out.println("By using == operator :"+ resultOne);
+            boolean resultTwo = strOne.equals(strTwo) ;
+            System.out.println("By using equals() method :"+ resultTwo);
+        }
+    }
+
+5 : public class LengthOfRefrigerator {
+        public static void main(String[] args) {
+            String str = "refrigerator";
+            System.out.println("Length of the Refrigerator is "+str.length());
+        }
+    }
+
+6 : public class EPresentInUmbrella {
+        public static void main(String[] args) {
+            String str = "Umbrella";
+            char ch = 'e';
+            boolean flag = false;
+            for(int i=0; i<str.length(); i++){
+                if(ch == str.charAt(i))
+                    flag = true;
+            }
+            if(flag)
+                System.out.println("Letter 'e' is present");
+            else
+                System.out.println("Letter 'e' is not present");
+        }
+    }
+
+7 : public class DeleteConsonantFromString {
+        public static void main(String[] args) {
+            String str = "Hello, have a good day";
+            String consonants = "([BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz]+)";
+            String result = str.replaceAll(consonants,"");
+            System.out.println(result);
+        }
+    }
